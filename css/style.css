@@ -1,0 +1,300 @@
+ *{margin: 0; padding: 0;} 
+ *{box-sizing: border-box;
+    border: solid 1px black; }
+img{
+     max-width: 100%;
+}
+ section {        
+    display: flex;
+    flex-direction: column;  
+    align-items: stretch; 
+    height: 100vh;
+    width: 100%;   
+ }
+/* *****************************
+           Header
+   ***************************** */
+
+header{
+    background-color: rgb(156, 87, 156);  
+    color: whitesmoke;
+}
+.logo{
+    width: min-content;
+    font-style: italic  ;
+    font-size: 3rem;
+    margin-top: 5vh;
+    margin-left: 10%;  
+    
+}
+.menu__list {
+   list-style-type: none; 
+   display: flex;  
+   flex-direction: row;
+   justify-content: flex-end;   
+   margin-top: -70px;  
+   margin-right: 50px;
+}
+li{   
+    margin: 0 20px 0 20px;
+    font-size: 1.3rem;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.invitationtext p{    
+    margin-top: 100px;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+}
+.buttontofooter{
+    font-size: 1.5rem;
+    background-color: tomato;  
+    color: whitesmoke;  
+    margin: 0 auto;
+    width: 250px ;
+    height: 60px;  
+    margin: 0 auto;
+}
+.headerbutton{
+    align-self: center;
+    margin-top: 5%;
+}
+/* *****************************
+           Section_2
+   ***************************** */
+
+.page2{
+  background-color: rgb(111, 211, 203);  
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+.page2__header {   
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
+.page2__text{
+    font-size: 20px;
+    text-align: center;
+    font-style: oblique;
+}
+.page2__imgtxt{
+    padding-top: 50px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.page2 img{
+    height: 100px;
+    width: 100px;
+}
+.page2__imgtxt div{
+    height: 40%;
+    width: 15%;
+}
+.page2 p{
+    font-size: 15px;
+    font-style: oblique;
+}
+
+/* *****************************
+           Section_6
+   ***************************** */
+
+.page6{
+    background-color: salmon;  
+    color: whitesmoke; 
+    text-align: center; 
+}
+.page6__header{
+    font-size: 20px;
+    padding-top: 20px;
+}
+.page6__text{
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 20px;   
+}
+.page6 img{
+    height: 100px;
+    width: 100px;
+}
+.page6__imgtxt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.page6__imgtxt div{
+    margin: 25px;
+    width: 30%;
+    height: 30vh;
+    display: flex;
+}
+/* *****************************
+           Section_7
+   ***************************** */
+
+.page7 *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.page7{   
+    background-color: blueviolet;   
+    color: whitesmoke;
+}
+input, textarea{
+    background-color: darkblue;
+    color: whitesmoke;
+}
+.sendbutton input{
+    background-color: cornflowerblue;
+    width: 150px;
+    height: 60px; 
+    padding-top: 10%; 
+}
+.page7__header{
+    font-size: x-large;
+    text-align: center;
+    margin: 2%;
+}
+.page7__text{
+    text-align: center;
+}
+.page7__forma {
+    width: 80%;
+    margin:0 auto;
+}
+form{
+    padding:10px;
+}
+.namemail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.inputname, .inputmail{
+   margin: 5% 0 3% 0;
+    width: 45%;
+}    
+.namemail input{
+    width: 100%;
+}
+.sendbutton{
+    margin-top: 5%;
+}
+
+/* *****************************
+           footer
+   ***************************** */
+
+.footer{
+    background-color: darkviolet;
+    height: 10vh;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 1%;
+}
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding:0 1% 0 1%;
+}
+
+
+/* *****************************
+           Media
+   ***************************** */
+
+ @media (max-width: 823px) {
+
+    section{
+        height: auto;
+    }
+    .page1, .page7 {
+        height: 100vh;
+    }
+   
+  .invitationtext p{
+    font-size: 1.6rem;
+    padding-top: 10px;
+    margin-top: 10px;
+    }
+    .menu__list{
+        display: block;
+        text-align: end;
+        margin-top: -80px;
+        margin-right: 5px;
+        float: right;
+      }
+      
+ 
+    /* section_2 */     
+    .page2__header h2{
+        font-size: 2rem;
+     }
+    h3{
+        font-size: .9rem;
+     }
+    p{
+        font-size: .9rem;
+     }
+ .page2__imgtxt .f{
+     display: inline-block;
+     width: max-content;
+    }
+ .page2__imgtxt{
+     display: flex;
+     flex-wrap: wrap;
+    }
+
+   /* section_6 */
+  .page2__header{
+      font-size: 2rem;
+    }
+  .page6__imgtxt div{
+      width: 80%;
+    }
+   p{
+    font-size: 1rem;
+    }
+ 
+/* section_7 */
+  .namemail{
+      flex-direction: column;
+     }
+
+  .inputmessage .message{
+     display: inline-block;
+      width: 100%;
+    }
+
+/* footer */
+   .footer{
+         font-size: 1rem;
+     }    
+ }
+
+/* media orientation: landscape */
+
+@media (max-width: 823px ) 
+   and (orientation: landscape) {
+
+.page7 {
+    height: auto; 
+}
+
+}
+
+
