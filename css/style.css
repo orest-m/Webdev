@@ -1,6 +1,11 @@
- *{margin: 0; padding: 0;} 
- *{box-sizing: border-box;}
- /* *{ border: solid 1px black; } */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900&display=swap');
+
+*{margin: 0; padding: 0;} 
+
+ *{box-sizing: border-box;
+   font-family: 'Titillium Web', sans-serif;
+}
+/*{ border: solid 1px black; } */  
 img{
      max-width: 100%;
 }
@@ -8,25 +13,31 @@ img{
     display: flex;
     flex-direction: column;  
     align-items: stretch; 
-    height: 100vh;
-    width: 100%;   
+    width: 100%;  
+ }
+ .container{
+     width: 100%;
+     max-width: 1440px;
+     margin: 0 auto;
  }
 /* *****************************
            Header
    ***************************** */
 
 header{
-    background-color: rgb(156, 87, 156);  
-    color: whitesmoke;
+    background-color:#87509c;  
+    color: #ffffff;
 }
-.logo{
-    width: min-content;
-    font-style: italic  ;
-    font-size: 3rem;
-    margin-top: 5vh;
-    margin-left: 10%;  
-    
-}
+    .logo{
+        width: 116px;
+        height: 36px;
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-left: 5rem;
+    }  
+    div .menu{
+        margin-top: 3rem;
+    }
 .menu__list {
    list-style-type: none; 
    display: flex;  
@@ -37,7 +48,7 @@ header{
 }
 li{   
     margin: 0 20px 0 20px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 a{
     text-decoration: none;
@@ -48,39 +59,76 @@ a{
     font-size: 3rem;
     text-align: center;
     padding: 10px;
+    font-size: 42px; 
+    color: #f7f3ea;
+    font-weight: 700;
 }
 .buttontofooter{
     font-size: 1.5rem;
-    background-color: tomato;  
-    color: whitesmoke;  
+    background-color: #eb7d4b;  
     margin: 0 auto;
     width: 250px ;
     height: 60px;  
-    margin: 0 auto;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding:0;
+    border-color: transparent;
+    border-bottom-color: orange;
+    border-bottom-width: medium;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+header form {
+    padding:0;
+    border:0;
 }
 .headerbutton{
     align-self: center;
     margin-top: 5%;
+    padding: 0rem;
+    border: 0rem;
 }
+
 /* *****************************
            Section_2
    ***************************** */
 
 .page2{
-  background-color: rgb(111, 211, 203);  
+  background-color: #17c2a4;  
   color: whitesmoke;
   display: flex;
   flex-direction: column;
+  padding: 3rem;
 }
 .page2__header {   
-    font-size: 20px;
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 700;
 }
 .page2__text{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
-    font-style: oblique;
+    padding-top: 30px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.line{
+    width: 87px;
+    height: 4px;
+    background-color: #000000;
+   
+    opacity: .4;
+    margin: 0 auto;
 }
 .page2__imgtxt{
     padding-top: 50px;
@@ -99,22 +147,40 @@ a{
     width: 15%;
 }
 .page2 p{
-    font-size: 15px;
-    font-style: oblique;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 100px;
 }
-
+.page2 h3{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 18px;
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-weight: 700;
+    padding: 2rem;
+}
 /* *****************************
            Section_6
    ***************************** */
 
 .page6{
-    background-color: salmon;  
-    color: whitesmoke; 
+    background-color:  #d74680;  
     text-align: center; 
 }
 .page6__header{
     font-size: 20px;
-    padding-top: 20px;
+    letter-spacing: 4px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
 }
 .page6__text{
     font-size: 20px;
@@ -129,14 +195,23 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around;  
 }
 .page6__imgtxt div{
     margin: 25px;
     width: 30%;
-    height: 30vh;
     display: flex;
+    margin-bottom: 100px;
 }
+.page6 p{
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 31px;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: italic;
+}
+
 /* *****************************
            Section_7
    ***************************** */
@@ -144,30 +219,43 @@ a{
 .page7 *{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
 }
 .page7{   
-    background-color: blueviolet;   
-    color: whitesmoke;
+    background-color: #3c5499;   
+    color: #ffffff;
 }
 input, textarea{
-    background-color: darkblue;
-    color: whitesmoke;
+    background-color: #273a71;
+    color: #ffffff;
+    border-radius: 4px;
+    border-color: transparent;
+    padding: 10px;
 }
 .sendbutton input{
-    background-color: cornflowerblue;
-    width: 150px;
+    background-color: #30bae7;
+    width: 200px;
     height: 60px; 
     padding-top: 10%; 
 }
 .page7__header{
-    font-size: x-large;
+    font-size: 25px;
+    letter-spacing: 4px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 700;
     text-align: center;
-    margin: 2%;
+    padding: 50px;
+    padding-bottom: 20px;
 }
 .page7__text{
     text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    font-family: "Titillium Web";
+    font-weight: 400;
 }
 .page7__forma {
     width: 80%;
@@ -192,23 +280,30 @@ form{
 .sendbutton{
     margin-top: 5%;
 }
+.sendbutton input{
+    border-color: transparent;
+    border-bottom-width: medium;
+    border-bottom-color: skyblue   
+}
 
 /* *****************************
            footer
    ***************************** */
 
 .footer{
-    background-color: darkviolet;
-    height: 10vh;
-    font-size: 2rem;
+    background-color: #344b8e;
     text-align: center;
     display: block;
     width: 100%;
     padding: 1%;
+    font-size: 24px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 600;
 }
 footer a{
     text-decoration: none;
-    color: whitesmoke;
     padding:0 1% 0 1%;
 }
 
@@ -221,9 +316,6 @@ footer a{
 
     section{
         height: auto;
-    }
-    .page1, .page7 {
-        height: 100vh;
     }
    
   .invitationtext p{
@@ -264,17 +356,19 @@ footer a{
       font-size: 2rem;
     }
   .page6__imgtxt div{
-      width: 80%;
+      width: 80%;  
     }
    p{
     font-size: 1rem;
     }
- 
+   
 /* section_7 */
   .namemail{
       flex-direction: column;
      }
-
+   .namemail input{
+       width: 220%;
+   }
   .inputmessage .message{
      display: inline-block;
       width: 100%;
