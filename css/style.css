@@ -6,7 +6,7 @@
    font-family: 'Titillium Web', sans-serif;
 }
 
-   *{ border: solid 1px black; } 
+ /*  *{ border: solid 1px black; } */
 
 img{
     object-fit: contain;     
