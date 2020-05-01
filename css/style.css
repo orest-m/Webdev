@@ -5,15 +5,18 @@
  *{box-sizing: border-box;
    font-family: 'Titillium Web', sans-serif;
 }
-/*{ border: solid 1px black; } */  
+
+   *{ border: solid 1px black; } 
+
 img{
-     max-width: 100%;
+    object-fit: contain;     
 }
  section {        
     display: flex;
     flex-direction: column;  
     align-items: stretch; 
     width: 100%;  
+    padding: 10px;
  }
  .container{
      width: 100%;
@@ -33,7 +36,7 @@ header{
         height: 36px;
         padding: 1rem;
         margin-top: 2rem;
-        margin-left: 5rem;
+        margin-left: 7%;
     }  
     div .menu{
         margin-top: 3rem;
@@ -54,6 +57,11 @@ a{
     text-decoration: none;
     color: whitesmoke;
 }
+a:hover{
+    background-color: #643a79;
+    border-radius: 4px;
+}
+
 .invitationtext p{    
     margin-top: 100px;
     font-size: 3rem;
@@ -62,10 +70,10 @@ a{
     font-size: 42px; 
     color: #f7f3ea;
     font-weight: 700;
+    white-space: pre;
 }
-.buttontofooter{
+.buttonclass{
     font-size: 1.5rem;
-    background-color: #eb7d4b;  
     margin: 0 auto;
     width: 250px ;
     height: 60px;  
@@ -76,10 +84,13 @@ a{
     border-radius: 4px;
     padding:0;
     border-color: transparent;
-    border-bottom-color: orange;
     border-bottom-width: medium;
     margin-bottom: 5rem;
     margin-top: 3rem;
+}
+.button_workwithus{
+    background-color: #eb7d4b;  
+    border-bottom-color: orange;
 }
 header form {
     padding:0;
@@ -179,12 +190,16 @@ header form {
     color: #ffffff;
     font-weight: 700;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 .page6__text{
-    font-size: 20px;
-    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-weight: 400;
     margin-top: 20px;   
 }
 .page6 img{
@@ -195,13 +210,16 @@ header form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;  
+    justify-content: space-around; 
+    padding-top: 50px; 
 }
 .page6__imgtxt div{
-    margin: 25px;
-    width: 30%;
+    margin: 5px;
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+.imgtxt__item {
+    width: 40%;
 }
 .page6 p{
     font-size: 21px;
@@ -210,6 +228,33 @@ header form {
     color: #ffffff;
     font-weight: 400;
     font-style: italic;
+    text-align: start;
+    margin-left: 10%;
+}
+ .testimony{
+     flex-direction: column;
+ }
+div .who{
+    font-size: 24px;
+letter-spacing: 0px;
+line-height: 26px;
+color: #ffffff;
+font-family: "Titillium Web";
+font-weight: 700;
+padding-left: 10%;
+margin-bottom: 1px;
+margin-top: -20px;
+
+}
+div .from{
+    font-size: 18px;
+letter-spacing: 0px;
+line-height: 26px;
+color: #ffdd99;
+font-family: "Titillium Web";
+font-weight: 400;
+padding-left: 10%;
+margin-bottom: 10px;
 }
 
 /* *****************************
@@ -224,6 +269,7 @@ header form {
 .page7{   
     background-color: #3c5499;   
     color: #ffffff;
+    padding-bottom: 15%;
 }
 input, textarea{
     background-color: #273a71;
@@ -269,6 +315,7 @@ form{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    padding-bottom: 25px;
 }
 .inputname, .inputmail{
    margin: 5% 0 3% 0;
@@ -283,28 +330,49 @@ form{
 .sendbutton input{
     border-color: transparent;
     border-bottom-width: medium;
-    border-bottom-color: skyblue   
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-weight: 600;
 }
-
+.button_sendmessage{
+    border-bottom-color: skyblue;
+}
 /* *****************************
            footer
    ***************************** */
 
-.footer{
+footer {
     background-color: #344b8e;
     text-align: center;
-    display: block;
+    display: flex;
     width: 100%;
+    height: 112px;
     padding: 1%;
     font-size: 24px;
     letter-spacing: 0px;
     line-height: 30px;
     color: #ffffff;
     font-weight: 600;
+    justify-content: center;
+    
+}
+.socialmedia{
+width: 90%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1440px;
+
+
+
 }
 footer a{
     text-decoration: none;
-    padding:0 1% 0 1%;
+    padding: 1%;
+    text-align: center;
 }
 
 
@@ -322,6 +390,7 @@ footer a{
     font-size: 1.6rem;
     padding-top: 10px;
     margin-top: 10px;
+    white-space: normal;
     }
     .menu__list{
         display: block;
@@ -356,7 +425,7 @@ footer a{
       font-size: 2rem;
     }
   .page6__imgtxt div{
-      width: 80%;  
+      width: 100%;  
     }
    p{
     font-size: 1rem;
@@ -378,6 +447,9 @@ footer a{
    .footer{
          font-size: 1rem;
      }    
+     .socialmedia{
+        flex-wrap: wrap;
+     }
  }
 
 /* media orientation: landscape */
@@ -391,4 +463,11 @@ footer a{
 
 }
 
-
+@media (max-width: 1439px) {
+    .invitationtext p{
+    white-space: normal;
+    }
+    .page2__imgtxt div {
+        width: 25%;
+    }
+}
